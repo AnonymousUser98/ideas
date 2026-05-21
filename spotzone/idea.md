@@ -52,9 +52,8 @@ This would open a page explaining how to access the game demos through DS Downlo
 #### Preview Game
 _Official assets exist for this button. Find them in the template repo._
 
-This would open the Nintendo Zone details page for a chosen game.
-
-This button could be used twice on the main menu.
+This would open the Nintendo Zone details page for a chosen game.\
+This button can be used twice on the main menu.
 
 #### Community Events
 This button would open a page that shows upcoming events that are happening at or near the SpotZone location.
