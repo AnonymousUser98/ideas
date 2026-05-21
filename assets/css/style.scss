@@ -1,4 +1,8 @@
-.project-name,
-.project-tagline {
+---
+---
+
+@import "{{ site.theme }}";
+
+.project-name .project-tagline {
     display: none;
 }
