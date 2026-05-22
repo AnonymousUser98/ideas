@@ -4,8 +4,7 @@ title: Super Mario World - Definitive Edition
 
 # Super Mario World - Definitive Edition
 
-This ROM hack would make the game better. It would use the standalone version or the All-Stars version as a base.
-
+This ROM hack would make the game better. It would use the standalone version or the All-Stars version as a base.\
 If using the standalone version as a base, Luigi would be replaced with his unique All-Stars sprite.
 
 
@@ -54,9 +53,8 @@ Pressing the <kbd>SELECT</kbd> button on the map would open the save menu. It wo
 * **SAVE & CONTINUE**
 * **SAVE & QUIT**
 
-The game menu would also display the text "PRESS Y FOR OPTIONS".
-
-After defeating Bowser, the text "PRESS X FOR STATUS" is added and the status menu is unlocked.
+The game menu would also display the text "PRESS Y FOR OPTIONS".\
+After defeating Bowser, the text "PRESS X FOR STATUS" would be added and the status menu is unlocked.
 
 
 
@@ -81,16 +79,15 @@ Pressing the <kbd>R</kbd> button in the options menu would display a description
 
 ###### The above list uses the following format:
 
-**Option** *(Choices) [Default]* - Description
-
-If `[Default]` is `[Ask]`, then there is no default, and the player will be asked about the option when creating a save file.
+> **Option** *(Choices) [Default]* - Description
+> 
+> If `[Default]` is `[Ask]`, then there is no default, and the player will be asked about the option when creating a save file.
 
 
 
 ### Pause Menu
 
-Pausing the game during a level would open a pause menu (can be hidden or shown by pressing <kbd>SELECT</kbd>).
-
+Pausing the game during a level would open a pause menu (can be hidden or shown by pressing <kbd>SELECT</kbd>).\
 This menu would have the following options:
 
 * **CONTINUE** - Close the pause menu and continue playing. Same as pressing <kbd>START</kbd>.
