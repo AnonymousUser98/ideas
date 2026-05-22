@@ -5,6 +5,9 @@ title: SpotZone
 # SpotZone
 SpotZone would be a custom Nintendo Zone program that allows you to easily host a Nintendo Zone hotspot without needing a console to host it on. It would do this using an emulated version or custom reimplementation of the 3DS local wireless protocol (instead of using a custom Wi-Fi network), allowing unmodded 3DS consoles to connect.
 
+> [!IMPORTANT]
+> Turns out it's impossible to make this work on unmodded consoles (unless there's a Root CA data breach).
+
 ## Features
 ### Easy Setup & Hosting
 You would be able to easily create your own Nintendo Zone with a mix of official and custom content using a Nintendo Zone template (which I've already created, check out [this repo](https://github.com/AnonymousUser98/NintendoZoneTemplate)) and a built-in toolbox to help modify and customize the template.
