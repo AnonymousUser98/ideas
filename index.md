@@ -14,13 +14,13 @@ These are all "someone should make this" or "please make this if you know how to
 
 If you make any of these ideas, I would prefer it if you made it open-source on GitHub or Codeberg. Also, I would want to know about it, so please share the repo link with me once it's finished.
 
-## Know who can do this?
-If you know someone that would be able to get one of these ideas started, please share it with them.
+## Share These Ideas
+If you know someone that would be interested in getting one of my ideas started, please share it with them (just send them the link to the idea page).
 
 ## My Other Projects
 <dl>
     <dt>GitHub Profile</dt>
-    <dd>https://github.com/AnonymousUser98</dd>
+    <dd>[https://github.com/AnonymousUser98](https://github.com/AnonymousUser98)</dd>
     <dt>Other Websites</dt>
-    <dd>https://anonymoususer98.github.io/</dd>
+    <dd>[https://anonymoususer98.github.io/](https://anonymoususer98.github.io/)</dd>
 </dl>
