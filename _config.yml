@@ -1,12 +1,13 @@
 name: "AnonymousUser98's Ideas"
 markdown: GFM
 show_downloads: false
-# theme: jekyll-theme-primer
+remote_theme: "pages-themes/primer"
 github:
   is_project_page: false
 plugins:
   - jekyll-gfm-admonitions
   - jekyll-optional-front-matter
+  - remote-theme
 repository: AnonymousUser98/ideas
 exclude:
   - Gemfile
