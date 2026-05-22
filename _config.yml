@@ -4,6 +4,14 @@ show_downloads: false
 # theme: jekyll-theme-cayman
 github:
   is_project_page: false
-
 plugins:
   - jekyll-gfm-admonitions
+  - jekyll-optional-front-matter
+repository: AnonymousUser98/ideas
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - node_modules/
+  - .sass-cache/
+  - .jekyll-cache/
