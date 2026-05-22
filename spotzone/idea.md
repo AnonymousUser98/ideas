@@ -87,8 +87,19 @@ This would open a page that has a similar layout to the 3DS notifications menu. 
 This is where the SpotPass content (and in-game gifts) would be. It would show a list of games that have available content, and clicking on one would tell you how to receive the content (e.g. "open the game and choose the _Mystery Gift_ option on the title screen).
 SwapNote stationery/postcards would be sent to your console when you initiate a download from somewhere in this section.
 
----
+-----
+
+# Mii Exchange
+Eventually (if it's possible), there could be a feature that allows people to share Miis (like CMOC but on a local server). This would work by using QR codes. The `loading.html` page would be replaced with a "select a service" page. There would be 2 options: _SpotZone_ (which would go to the main menu) and _Mii Exchange_.
+
+## Posting a Mii
+To post a Mii, you would export it as a QR code and then upload the QR code (from your 3DS photo library) to the submission page (which would still be in the Nintendo Zone app (not the Internet Browser)). The desktop app (which runs the local server) would do some checks to make sure the image is valid (e.g. make sure the image contains a QR code, make sure the image doesn't contain anything other than the QR code (such as someone holding a printed QR code), make sure the QR code's data is Mii data (and not something else), make sure the Mii is valid, run the Mii's name through a list of blocked words, etc.) before rendering the Mii (using arainkordi's Mii rendering tools) and storing the QR code and rendered preview in its database.
+
+If the Mii contains birthday and creator information, a warning page would be displayed to ask the user if they're fine with sharing that info.
+
+## Downloading a Mii
+After selecting the Mii you want, a details page would open, which would contain a bigger preview image and some details about the Mii (this would appear on the top screen). There would be a 6-digit code on the bottom screen.
+To download the Mii, you would go to a certain website on your phone (I guess it would be hosted on the SpotZone computer) and enter the code from your 3DS. This would display the Mii's QR code on your screen, which you would then scan with the Mii Maker app on your 3DS.
 
 > [!IMPORTANT]
-> **THIS PAGE IS UNFINISHED.**
-> I haven't finished typing all my ideas yet.
+> Because this involves serving websites to phones, it would only work if the host computer has an internet connection. The Wi-Fi card would be busy dealing with local wireless, so you would need a LAN cable or a second Wi-Fi card.
