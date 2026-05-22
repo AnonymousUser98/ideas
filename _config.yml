@@ -1,7 +1,7 @@
 name: "AnonymousUser98's Ideas"
 markdown: GFM
 show_downloads: false
-theme: jekyll-theme-primer
+# theme: jekyll-theme-primer
 github:
   is_project_page: false
 plugins:
