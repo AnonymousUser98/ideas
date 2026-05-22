@@ -7,6 +7,6 @@ gem "jekyll"
 group :jekyll_plugins do
   gem "jekyll-gfm-admonitions"
   gem "jekyll-optional-front-matter"
-  gem "github-pages"
+  gem "github-pages", group: :jekyll_plugins
   gem "jekyll-remote-theme"
 end
