@@ -1,7 +1,7 @@
 name: "AnonymousUser98's Ideas"
 markdown: GFM
 show_downloads: false
-remote_theme: "pages-themes/primer"
+remote_theme: pages-themes/primer@v0.6.0
 github:
   is_project_page: false
 plugins:
