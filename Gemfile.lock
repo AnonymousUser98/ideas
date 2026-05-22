@@ -317,6 +317,7 @@ DEPENDENCIES
   jekyll
   jekyll-gfm-admonitions
   jekyll-optional-front-matter
+  jekyll-remote-theme
 
 BUNDLED WITH
    2.6.9
