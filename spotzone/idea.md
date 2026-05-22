@@ -16,7 +16,7 @@ During setup, the user would be asked if they want to enable StreetPass Relay (S
 > [!NOTE]
 > I don't know if this would be possible to do, but it would be a great feature to have.
 
-This feature would allow players to set up and distribute SpotPass content, including:
+This feature would allow users to set up and distribute SpotPass content, including:
 - Pokémon Mystery Gifts
 - _Animal Crossing_ Items (custom homebrew items if possible)
 - _Puzzle Swap_ Images
