@@ -7,7 +7,7 @@ github:
 plugins:
   - jekyll-gfm-admonitions
   - jekyll-optional-front-matter
-  - remote-theme
+  - jekyll-remote-theme
 repository: AnonymousUser98/ideas
 exclude:
   - Gemfile
