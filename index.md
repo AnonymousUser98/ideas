@@ -8,6 +8,7 @@ This is where I post ideas for stuff that should exist. If you know how to make 
 ## Ideas List
 - [SpotZone](spotzone/idea.md) - 3DS homebrew service
 - [Super Mario World: Definitive Edition](smw-de/idea.md) - SNES ROM hack
+- [Winglish-CA](winglish/idea.md) - True en-CA support for Windows
 
 ## Usage Policy
 These are all "someone should make this" or "please make this if you know how to" ideas, so I'm perfectly fine with you using them (including the names and logos). You can modify them, improve them, or even discuss improvements to my ideas without actually starting the project.
