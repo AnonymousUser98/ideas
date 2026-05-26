@@ -25,14 +25,14 @@ There should be a way to have the rear paddle/grip buttons behave as separate bu
 
 There should be an option to make the grip buttons act as hold switches for turbo (and other modifiers).
 
-For example, you could have the X button behave normally, but it would be a turbo button if you press it while holding the right grip button. You could also make the left stick less sensitive or make the A button behave like the R button while holding the left grip button.
+For example, you could have the <kbd>X</kbd> button behave normally, but it would be a turbo button if you press it while holding the right grip button. You could also make the left stick less sensitive or make the <kbd>A</kbd> button behave like the <kbd>R</kbd> button while holding the left grip button.
 
 
 
 ## amiibo (NFC) Emulation
 
 > [!NOTE]
-> I'm not sure if this is possible with the internal storage of the controller, but this would be a nice feature if it's possible to add.
+> I'm not sure if this is possible with the internal storage of the controller, but it would be a great feature if it's possible to add.
 
 When running in Switch mode (connected to Nintendo Switch), you could press a button combo (such as <kbd>L+Down+Function Button</kbd>) to put the controller in amiibo menu mode. This would change the RGB lighting to the amiibo colours (the 6 colours used in the amiibo logo (and the "new" in New 3DS)) and temporarily make the controller stop sending your button inputs to the console. You would then be able to use the d-pad to select an amiibo to mount. For example, it might allow you to store up to 9 virtual amiibo and represent each one with a colour (red, orange, yellow, green, cyan, blue, purple, pink, white). You would use the d-pad to control the colour of the RGB lighting and press the <kbd>A</kbd> button to select the amiibo that's assigned to the currently displayed colour. This amiibo would then get mounted as if it were on the NFC touchpoint of an actual Switch controller.
 
