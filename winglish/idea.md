@@ -1,3 +1,7 @@
+---
+title: Winglish-CA
+---
+
 # Winglish-CA
 This would add actual support for Canadian English (en-CA) to Windows 10 and Windows 11, instead of just being a slightly modified British English.
 
