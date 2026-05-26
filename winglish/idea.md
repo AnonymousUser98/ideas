@@ -26,6 +26,7 @@ This would control the following words:
   - Just remember that the verb form (e.g. "licensed" and "licensing") is always spelled with an S.
 - Offense/Offence
 - Defense/Defence
+
 It would **not** affect practice/practise (which is always spelled with a C).
 
-This setting might even have a custom mode (e.g. for anyone that wants to use "license", "offense", and "defence", or another mix of those spellings).
+This setting might even have a custom mode (e.g. for anyone that wants to use "license", "offense", and "defence", or another mix of British and American spellings).
