@@ -1,4 +1,4 @@
-# Winglish CA
+# Winglish-CA
 This would add actual support for Canadian English (en-CA) to Windows 10 and Windows 11, instead of just being a slightly modified British English.
 
 ## Current Problem
@@ -7,7 +7,7 @@ Windows doesn't know what Canadian English is. It just takes British English and
 This seems to happen because Windows doesn't have a "local experience pack" for en-CA, meaning it doesn't actually support it internally.
 
 ## Solution Idea
-**Winglish CA** would simply add true en-CA support to Windows. It would use the en-US and en-GB language packs as a base, and it would modify them to create an actually correct en-CA option for Windows. Even better if it works without admin access.
+**Winglish-CA** would simply add true en-CA support to Windows. It would use the en-US and en-GB language packs as a base, and it would modify them to create an actually correct en-CA option for Windows. Even better if it works without admin access.
 
 ## Customi(s/z)ation
 In Canadian English, both the British and American spellings are correct for some words, and the one you should use just depends on your preference.
@@ -24,4 +24,4 @@ This would control the following words:
 - Defense/Defence
 It would **not** affect practice/practise (which is always spelled with a C).
 
-This setting might even have a custom mode (e.g. for anyone that wants to use "license", "offense", and "defence" or another mix).
+This setting might even have a custom mode (e.g. for anyone that wants to use "license", "offense", and "defence", or another mix of those spellings).
