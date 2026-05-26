@@ -30,3 +30,8 @@ This would control the following words:
 It would **not** affect practice/practise (which is always spelled with a C).
 
 This setting might even have a custom mode (e.g. for anyone that wants to use "license", "offense", and "defence", or another mix of British and American spellings).
+
+### ER-RE Preference
+Controls if it should be meter/liter or metre/litre. Also affects center/centre.
+
+This setting could also have a "mixed mode" (for combinations like meter/litre/centre).
