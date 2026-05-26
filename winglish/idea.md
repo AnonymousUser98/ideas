@@ -18,7 +18,7 @@ In Canadian English, both the British and American spellings are correct for som
 This program would include a simple settings menu where you can specify your preferences. It would have the following options:
 
 ### S-Z Preference
-This would decide if certain words are spelled with an S or a Z. This setting would be for words like customize/customise, organization/organisation, and other words where one of the letters can be an S or a Z.
+This would decide if certain words are spelled with an S or a Z. This setting would be for words like customize/customise, organization/organisation, optimize/optimise, and other words where one of the letters can be an S or a Z.
 
 ### C-S Preference
 This would control the following words:
