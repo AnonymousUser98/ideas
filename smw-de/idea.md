@@ -1,6 +1,6 @@
 ---
 title: Super Mario World - Definitive Edition
-permalink: /smw-de/
+permalink: /romhacks/smw/
 ---
 
 # Super Mario World: Definitive Edition
