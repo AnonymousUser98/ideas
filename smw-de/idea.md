@@ -1,8 +1,9 @@
 ---
 title: Super Mario World - Definitive Edition
+permalink: /smw-de/
 ---
 
-# Super Mario World - Definitive Edition
+# Super Mario World: Definitive Edition
 
 This ROM hack would make the game better. It would use the standalone version or the All-Stars version as a base.\
 If using the standalone version as a base, Luigi would be replaced with his unique All-Stars sprite.

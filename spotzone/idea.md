@@ -1,5 +1,6 @@
 ---
 title: SpotZone
+permalink: /3ds/spotzone/
 ---
 
 # SpotZone

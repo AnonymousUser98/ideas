@@ -1,5 +1,6 @@
 ---
 title: GameSir CFW
+permalink: /gamesir/
 ---
 
 # Custom Firmware for GameSir Super Nova

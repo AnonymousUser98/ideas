@@ -1,5 +1,6 @@
 ---
 title: Badger
+permalink: /3ds/badger/
 ---
 
 # Badger

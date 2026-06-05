@@ -1,5 +1,6 @@
 ---
 title: Winglish-CA
+permalink: /winglish/
 ---
 
 # Winglish-CA
