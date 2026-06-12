@@ -9,6 +9,8 @@ Quite a few video games don't use metric units, and they would be so much better
 ## Pilotwings Resort
 Use km/h and meters in the North American version. Might also have an option to use km/h for speed and feet for altitude.
 
+This mod would also prevent the glitchy lines from appearing on your photos.
+
 ## Wii Fit / Wii Fit Plus
 > [!NOTE]
 > Depending on how save data is stored, this mod might need to change the save data structure in the North American version.
