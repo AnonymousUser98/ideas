@@ -1,6 +1,6 @@
 ---
 title: Sensor Bar Calibration Tool
-permalink: /wii/sensor-bar
+permalink: /wii/sensor-bar-cios
 ---
 
 # Sensor Bar Calibration Tool
