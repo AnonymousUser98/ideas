@@ -14,7 +14,52 @@ Downloaded repositories would be stored in a **Git Preservation Container** file
 
 ### Directory Structure
 
-<!-- INSERT HERE -->
+<!-- URL: https://utilitycove.com/tools/folder-structure-generator?s=eyJSZXBvTmFtZS43eiI6eyJtZXRhLnhtbCI6bnVsbCwiYnJhbmNoZXMiOnsibWFzdGVyIjp7IjxyZXBvIGZpbGVzPiI6bnVsbH0sImRldiI6eyI8cmVwbyBmaWxlcz4iOm51bGx9fSwicmVsZWFzZXMiOnsicmVsZWFzZXMueG1sIjpudWxsLCJkZXNjcmlwdGlvbnMiOnsidjAuOS4wLXByZTEubWQiOm51bGwsInYxLjAuMC5tZCI6bnVsbCwidjEuMC4xLm1kIjpudWxsLCJ2MS4wLjIubWQiOm51bGx9LCJ2MS4wLjAiOnsicHJvZ3JhbS13aW5kb3dzLmV4ZSI6bnVsbCwicHJvZ3JhbS13aW5kb3dzLXBvcnRhYmxlLnppcCI6bnVsbCwicHJvZ3JhbS1saW51eC5BcHBJbWFnZSI6bnVsbH0sInYxLjAuMiI6eyJwcm9ncmFtLXdpbmRvd3MuZXhlIjpudWxsLCJwcm9ncmFtLXdpbmRvd3MtcG9ydGFibGUuemlwIjpudWxsLCJwcm9ncmFtLWxpbnV4LkFwcEltYWdlIjpudWxsfX0sInVwc3RyZWFtIjp7IjAiOnsibWV0YS54bWwiOm51bGwsImJyYW5jaGVzIjp7Im1hc3RlciI6eyI8cmVwbyBmaWxlcz4iOm51bGx9fX0sIjEiOnsibWV0YS54bWwiOm51bGwsImJyYW5jaGVzIjp7Im1hc3RlciI6eyI8cmVwbyBmaWxlcz4iOm51bGx9LCJvbGQiOnsiPHJlcG8gZmlsZXM%2BIjpudWxsfX19fSwid2lraSI6eyI8d2lraSBmaWxlcz4iOm51bGx9LCJjb250cmlicyI6eyIxIjp7IjxmaWxlcyBmb3IgUFIvaXNzdWUgIzE%2BIjpudWxsfSwiMiI6eyI8ZmlsZXMgZm9yIFBSL2lzc3VlICMyPiI6bnVsbH19fX0%3D -->
+
+```
+└── RepoName.7z/
+    ├── meta.xml
+    ├── branches/
+    │   ├── master/
+    │   │   └── <repo files>
+    │   └── dev/
+    │       └── <repo files>
+    ├── releases/
+    │   ├── releases.xml
+    │   ├── descriptions/
+    │   │   ├── v0.9.0-pre1.md
+    │   │   ├── v1.0.0.md
+    │   │   ├── v1.0.1.md
+    │   │   └── v1.0.2.md
+    │   ├── v1.0.0/
+    │   │   ├── program-windows.exe
+    │   │   ├── program-windows-portable.zip
+    │   │   └── program-linux.AppImage
+    │   └── v1.0.2/
+    │       ├── program-windows.exe
+    │       ├── program-windows-portable.zip
+    │       └── program-linux.AppImage
+    ├── upstream/
+    │   ├── 0/
+    │   │   ├── meta.xml
+    │   │   └── branches/
+    │   │       └── master/
+    │   │           └── <repo files>
+    │   └── 1/
+    │       ├── meta.xml
+    │       └── branches/
+    │           ├── master/
+    │           │   └── <repo files>
+    │           └── old/
+    │               └── <repo files>
+    ├── wiki/
+    │   └── <wiki files>
+    └── contribs/
+        ├── 1/
+        │   └── <files for PR/issue #1>
+        └── 2/
+            └── <files for PR/issue #2>
+```
 
 
 ### Specific Files/Folders
