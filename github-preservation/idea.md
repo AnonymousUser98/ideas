@@ -24,7 +24,13 @@ Click on a file name to view more details.
 <dl>
     <dt><a href="file-details/meta.xml.md">meta.xml</a></dt>
     <dd>Contains various information about the repo.</dd>
-
+    <!---->
+    <dt>releases/</dt>
+    <dd>Contains a subfolder for each release included in the archive. You can choose to only include specific releases to reduce file size. Only selected releases will be fully downloaded and stored, but metadata, tag information, and release descriptions will be stored for all releases. A subfolder is created for each release that gets included in the archive. Non-archived releases still get metadata entries and description files.</dd>
+    <!---->
     <dt>releases/releases.xml</dt>
-    <dd>Contains information about releases, including names, labels, tags, and points in the Git history where the release's source code appears.</dd>
+    <dd>Contains information about releases, including names, dates, labels, tags, and points in the Git history where the release's source code appears.</dd>
+    <!---->
+    <dt>releases/descriptions/</dt>
+    <dd>Contains the descriptions of all releases. Each release's description is stored as a Markdown file.</dd>
 </dl>
