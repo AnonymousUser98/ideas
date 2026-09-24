@@ -10,7 +10,7 @@ This program would make it easy to download GitHub repositories in a format suit
 
 ## File Format
 
-Downloaded repositories would be stored in a **Git Preservation Container** file, which would use the `.grpc` file extension (which stands for _Git Repository Preservation Container_). It's basically a renamed 7Z file. It uses the same LZMA2 compression, has the same compression level settings as 7-Zip, and would be openable in any program that can read 7Z files.
+Downloaded repositories would be stored in a **Git Preservation Container** file, which would use the `.grpc` file extension (which stands for _Git Repository Preservation Container_). It's basically a renamed 7Z file, but with a different compression algorithm. It uses a modified version of LZMA2 that's optimized for Git repositories.
 
 ### Directory Structure
 
@@ -33,4 +33,16 @@ Click on a file name to view more details.
     <!---->
     <dt>releases/descriptions/</dt>
     <dd>Contains the descriptions of all releases. Each release's description is stored as a Markdown file.</dd>
+    <!---->
+    <dt>releases/[ReleaseName]/</dt>
+    <dd>Contains all binaries and other files in the release.</dd>
+    <!---->
+    <dt>upstream/</dt>
+    <dd>If the repo being archived is a fork, the upstream repo(s) will be archived as well. For more details, look at the <i>Upstream</i> section of this page.</dd>
+    <!---->
+    <dt>wiki/</dt>
+    <dd>If the repo contains a wiki, it will be included in the archive and stored in this folder. Edit history is saved as well.</dd>
+    <!---->
+    <dt>contribs/</dt>
+    <dd>There's an option to store issues and pull requests in the archive. If enabled, issues and PRs will be stored in this folder. I don't know what format would be used.</dd>
 </dl>
