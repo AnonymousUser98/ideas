@@ -21,17 +21,6 @@ This program would include a simple settings menu where you can specify your pre
 ### S/Z Preference
 This would decide if certain words are spelled with an S or a Z. This setting would be for words like customize/customise, organization/organisation, optimize/optimise, and other words where one of the letters can be an S or a Z.
 
-### C/S Preference
-This would control the following words:
-- License/Licence
-  - Just remember that the verb form (e.g. "licensed" and "licensing") is always spelled with an S.
-- Offense/Offence
-- Defense/Defence
-
-It would **not** affect practice/practise (which is always spelled with a C).
-
-This setting might even have a custom mode (e.g. for anyone that wants to use "license", "offense", and "defence", or another mix of British and American spellings).
-
 ### ER/RE Preference
 Controls if it should be meter/liter or metre/litre. Also affects center/centre.
 
