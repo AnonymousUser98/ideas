@@ -1,0 +1,478 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="xLdoX8ECkM5-xqciglZk">
+    <mxGraphModel dx="2764" dy="1739" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="WJ9gDT0KFdKt9C58NnB0-4" edge="1" parent="1" source="WJ9gDT0KFdKt9C58NnB0-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="WJ9gDT0KFdKt9C58NnB0-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WJ9gDT0KFdKt9C58NnB0-2" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;" value="POWER button is pressed.&lt;div&gt;Wii turns on.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="200" x="60" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WJ9gDT0KFdKt9C58NnB0-6" edge="1" parent="1" source="WJ9gDT0KFdKt9C58NnB0-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="WJ9gDT0KFdKt9C58NnB0-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WJ9gDT0KFdKt9C58NnB0-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Wii starts from boot0 in ROM.&lt;div&gt;boot0 verifies boot1, detects unmodified boot1 and loads it.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="200" x="60" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="WJ9gDT0KFdKt9C58NnB0-8" edge="1" parent="1" source="WJ9gDT0KFdKt9C58NnB0-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="WJ9gDT0KFdKt9C58NnB0-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WJ9gDT0KFdKt9C58NnB0-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="boot1 checks the signature of boot2, finds valid signature (nandboot), and loads boot2.&lt;div&gt;The version also matches (because the installer set the version byte in SEEPROM to 0 to match nandboot), so all checks pass and boot2 loads.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="200" x="60" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="WJ9gDT0KFdKt9C58NnB0-11" edge="1" parent="1" source="WJ9gDT0KFdKt9C58NnB0-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="WJ9gDT0KFdKt9C58NnB0-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WJ9gDT0KFdKt9C58NnB0-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="boot2 (nandboot) loads executable code from NAND pages 0x80-0xAF and runs it.&lt;div&gt;This location in NAND contains Lifeboot, placed by the installer.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="200" x="60" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="WJ9gDT0KFdKt9C58NnB0-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Lifeboot is now running." vertex="1">
+          <mxGeometry height="30" width="245" x="320" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WJ9gDT0KFdKt9C58NnB0-12" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" value="Is there an SD card inserted?" vertex="1">
+          <mxGeometry height="80" width="245" x="320" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="WJ9gDT0KFdKt9C58NnB0-13" edge="1" parent="1" source="WJ9gDT0KFdKt9C58NnB0-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="WJ9gDT0KFdKt9C58NnB0-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WJ9gDT0KFdKt9C58NnB0-14" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" value="Is there a file called &lt;b&gt;rescue.dol&lt;/b&gt;&amp;nbsp;or&lt;div&gt;&lt;b&gt;rescue.elf&lt;/b&gt;&amp;nbsp;on the root of the SD card?&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="315" x="625" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="WJ9gDT0KFdKt9C58NnB0-16" edge="1" parent="1" source="WJ9gDT0KFdKt9C58NnB0-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="WJ9gDT0KFdKt9C58NnB0-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WJ9gDT0KFdKt9C58NnB0-18" connectable="0" parent="WJ9gDT0KFdKt9C58NnB0-16" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="-0.22" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WJ9gDT0KFdKt9C58NnB0-21" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Load and run the file, prioritizing the DOL file extension over the ELF file extension." vertex="1">
+          <mxGeometry height="80" width="230" x="1000" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="WJ9gDT0KFdKt9C58NnB0-22" edge="1" parent="1" source="WJ9gDT0KFdKt9C58NnB0-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="WJ9gDT0KFdKt9C58NnB0-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WJ9gDT0KFdKt9C58NnB0-24" connectable="0" parent="WJ9gDT0KFdKt9C58NnB0-22" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="-0.1778" y="-1" as="geometry">
+            <mxPoint x="1" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-135" edge="1" parent="1" source="WJ9gDT0KFdKt9C58NnB0-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="fr9j5CF3H0y0zzAQEQXM-102">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-136" connectable="0" parent="fr9j5CF3H0y0zzAQEQXM-135" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="-0.7" y="-1" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WJ9gDT0KFdKt9C58NnB0-25" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" value="Is there a USB Mass Storage device&lt;div&gt;plugged in to any of the USB ports?&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="240" x="400" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="WJ9gDT0KFdKt9C58NnB0-26" edge="1" parent="1" source="WJ9gDT0KFdKt9C58NnB0-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="fr9j5CF3H0y0zzAQEQXM-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WJ9gDT0KFdKt9C58NnB0-27" connectable="0" parent="WJ9gDT0KFdKt9C58NnB0-26" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="No" vertex="1">
+          <mxGeometry relative="1" x="-0.2741" y="-1" as="geometry">
+            <mxPoint x="-3" y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WJ9gDT0KFdKt9C58NnB0-28" edge="1" parent="1" source="WJ9gDT0KFdKt9C58NnB0-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="fr9j5CF3H0y0zzAQEQXM-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WJ9gDT0KFdKt9C58NnB0-29" connectable="0" parent="WJ9gDT0KFdKt9C58NnB0-28" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="No" vertex="1">
+          <mxGeometry relative="1" x="-0.9579" y="2" as="geometry">
+            <mxPoint x="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-12" edge="1" parent="1" source="fr9j5CF3H0y0zzAQEQXM-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="fr9j5CF3H0y0zzAQEQXM-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-80" connectable="0" parent="fr9j5CF3H0y0zzAQEQXM-12" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="-0.756" as="geometry">
+            <mxPoint x="3" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-82" edge="1" parent="1" source="fr9j5CF3H0y0zzAQEQXM-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="fr9j5CF3H0y0zzAQEQXM-81">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-83" connectable="0" parent="fr9j5CF3H0y0zzAQEQXM-82" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="No" vertex="1">
+          <mxGeometry relative="1" x="-0.1167" y="-1" as="geometry">
+            <mxPoint y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-7" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" value="&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Wii:&lt;/b&gt;&amp;nbsp;Are the POWER and EJECT buttons being held?&lt;div&gt;&lt;b&gt;Wii Mini:&lt;/b&gt;&amp;nbsp;Is the power button being held while the disc&lt;/div&gt;&lt;div&gt;cover is open?&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="305" x="320" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-14" edge="1" parent="1" source="fr9j5CF3H0y0zzAQEQXM-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="fr9j5CF3H0y0zzAQEQXM-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Disc Boot Mode" vertex="1">
+          <mxGeometry height="30" width="150" x="685" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Print the text &quot;Disc Boot Mode&quot; on the screen." vertex="1">
+          <mxGeometry height="30" width="260" x="880" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-18" edge="1" parent="1" source="fr9j5CF3H0y0zzAQEQXM-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="fr9j5CF3H0y0zzAQEQXM-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-19" connectable="0" parent="fr9j5CF3H0y0zzAQEQXM-18" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="No" vertex="1">
+          <mxGeometry relative="1" x="-0.2593" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-22" edge="1" parent="1" source="fr9j5CF3H0y0zzAQEQXM-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="fr9j5CF3H0y0zzAQEQXM-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-23" connectable="0" parent="fr9j5CF3H0y0zzAQEQXM-22" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="-0.1749" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-15" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" value="Is there a disc in the console?" vertex="1">
+          <mxGeometry height="60" width="260" x="880" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-20" edge="1" parent="1" source="fr9j5CF3H0y0zzAQEQXM-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="fr9j5CF3H0y0zzAQEQXM-15">
+          <mxGeometry relative="1" x="0.6522" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Display the text &quot;Please insert a disc.&quot;" vertex="1">
+          <mxGeometry height="30" width="260" x="880" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-17" edge="1" parent="1" source="fr9j5CF3H0y0zzAQEQXM-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="fr9j5CF3H0y0zzAQEQXM-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Read the disc." vertex="1">
+          <mxGeometry height="60" width="200" x="1200" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-27" edge="1" parent="1" source="fr9j5CF3H0y0zzAQEQXM-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="fr9j5CF3H0y0zzAQEQXM-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-31" connectable="0" parent="fr9j5CF3H0y0zzAQEQXM-27" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="No" vertex="1">
+          <mxGeometry relative="1" x="-0.0833" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-24" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" value="Is the disc a valid DVD?" vertex="1">
+          <mxGeometry height="60" width="200" x="1440" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-25" edge="1" parent="1" source="fr9j5CF3H0y0zzAQEQXM-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="fr9j5CF3H0y0zzAQEQXM-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-26" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Display the text &quot;Invalid disc.&quot;" vertex="1">
+          <mxGeometry height="40" width="200" x="1440" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-30" edge="1" parent="1" source="fr9j5CF3H0y0zzAQEQXM-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="fr9j5CF3H0y0zzAQEQXM-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-28" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.delay;whiteSpace=wrap;fillColor=#fff2cc;strokeColor=#d6b656;" value="Wait for the disc to be ejected." vertex="1">
+          <mxGeometry height="40" width="200" x="1440" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-29" edge="1" parent="1" source="fr9j5CF3H0y0zzAQEQXM-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="fr9j5CF3H0y0zzAQEQXM-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-32" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" value="Is there an executable file&lt;div&gt;on the root of the disc?&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="200" x="1680" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-33" edge="1" parent="1" source="fr9j5CF3H0y0zzAQEQXM-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="fr9j5CF3H0y0zzAQEQXM-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-34" connectable="0" parent="fr9j5CF3H0y0zzAQEQXM-33" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="-0.3019" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-36" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Run the file.&lt;div&gt;Certain file names are checked for and prioritized.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="300" x="1630" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-37" edge="1" parent="1" source="fr9j5CF3H0y0zzAQEQXM-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" target="fr9j5CF3H0y0zzAQEQXM-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-38" connectable="0" parent="fr9j5CF3H0y0zzAQEQXM-37" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="-0.0812" y="-1" as="geometry">
+            <mxPoint x="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-39" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" value="Is the disc a valid&lt;div&gt;retail Wii disc?&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="200" x="1680" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-40" edge="1" parent="1" source="fr9j5CF3H0y0zzAQEQXM-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="fr9j5CF3H0y0zzAQEQXM-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-41" connectable="0" parent="fr9j5CF3H0y0zzAQEQXM-40" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="No" vertex="1">
+          <mxGeometry relative="1" x="-0.1054" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-49" edge="1" parent="1" source="fr9j5CF3H0y0zzAQEQXM-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="fr9j5CF3H0y0zzAQEQXM-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-51" connectable="0" parent="fr9j5CF3H0y0zzAQEQXM-49" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="-0.6693" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-42" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" value="Does the game disc have&lt;div&gt;a valid update partition?&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="200" x="1680" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-43" edge="1" parent="1" source="fr9j5CF3H0y0zzAQEQXM-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="fr9j5CF3H0y0zzAQEQXM-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-44" connectable="0" parent="fr9j5CF3H0y0zzAQEQXM-43" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="-0.1481" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-45" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Boot the disc." vertex="1">
+          <mxGeometry height="60" width="200" x="1680" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-46" edge="1" parent="1" source="fr9j5CF3H0y0zzAQEQXM-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="fr9j5CF3H0y0zzAQEQXM-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-47" connectable="0" parent="fr9j5CF3H0y0zzAQEQXM-46" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="No" vertex="1">
+          <mxGeometry relative="1" x="-0.1389" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-55" edge="1" parent="1" source="fr9j5CF3H0y0zzAQEQXM-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="fr9j5CF3H0y0zzAQEQXM-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-48" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;Display the following text on the screen:&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Update partition detected.&lt;/div&gt;&lt;div&gt;Double-click the POWER button to load and install update partition.&lt;/div&gt;&lt;div&gt;Disc will boot normally in 10 seconds.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="250" x="1370" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-52" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;Has the POWER button been&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;pressed twice in quick succession?&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="200" x="1140" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-53" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Start a timer." vertex="1">
+          <mxGeometry height="40" width="100" x="1190" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-56" edge="1" parent="1" source="fr9j5CF3H0y0zzAQEQXM-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="fr9j5CF3H0y0zzAQEQXM-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-57" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Boot the disc&#39;s update partition." vertex="1">
+          <mxGeometry height="60" width="100" x="990" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-58" edge="1" parent="1" source="fr9j5CF3H0y0zzAQEQXM-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="fr9j5CF3H0y0zzAQEQXM-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-59" connectable="0" parent="fr9j5CF3H0y0zzAQEQXM-58" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="0.0556" as="geometry">
+            <mxPoint x="6" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-60" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" value="Have 10 seconds&lt;div&gt;passed since the&lt;div&gt;timer started?&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="200" x="1140" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-61" edge="1" parent="1" source="fr9j5CF3H0y0zzAQEQXM-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="fr9j5CF3H0y0zzAQEQXM-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-62" connectable="0" parent="fr9j5CF3H0y0zzAQEQXM-61" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="No" vertex="1">
+          <mxGeometry relative="1" x="-0.2176" y="-1" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-63" edge="1" parent="1" source="fr9j5CF3H0y0zzAQEQXM-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="fr9j5CF3H0y0zzAQEQXM-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-64" connectable="0" parent="fr9j5CF3H0y0zzAQEQXM-63" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="No" vertex="1">
+          <mxGeometry relative="1" x="-0.4889" as="geometry">
+            <mxPoint x="-1" y="15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-65" edge="1" parent="1" source="fr9j5CF3H0y0zzAQEQXM-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="fr9j5CF3H0y0zzAQEQXM-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-66" connectable="0" parent="fr9j5CF3H0y0zzAQEQXM-65" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="-0.8908" y="-1" as="geometry">
+            <mxPoint x="-3" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-75" edge="1" parent="1" source="fr9j5CF3H0y0zzAQEQXM-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="fr9j5CF3H0y0zzAQEQXM-74">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-76" connectable="0" parent="fr9j5CF3H0y0zzAQEQXM-75" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="No" vertex="1">
+          <mxGeometry relative="1" x="-0.7987" as="geometry">
+            <mxPoint x="18" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-67" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" value="Is the disc a valid&lt;div&gt;GameCube disc?&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="200" x="1680" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-68" edge="1" parent="1" source="fr9j5CF3H0y0zzAQEQXM-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="fr9j5CF3H0y0zzAQEQXM-67">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-70" connectable="0" parent="fr9j5CF3H0y0zzAQEQXM-68" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="No" vertex="1">
+          <mxGeometry relative="1" x="-0.8535" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-71" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Boot the disc in GameCube mode." vertex="1">
+          <mxGeometry height="60" width="200" x="1680" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-72" edge="1" parent="1" source="fr9j5CF3H0y0zzAQEQXM-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="fr9j5CF3H0y0zzAQEQXM-71">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-73" connectable="0" parent="fr9j5CF3H0y0zzAQEQXM-72" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="-0.27" y="-2" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-74" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Display the text &quot;No usable data on disc.&quot;" vertex="1">
+          <mxGeometry height="40" width="260" x="1240" y="920" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-79" edge="1" parent="1" source="fr9j5CF3H0y0zzAQEQXM-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" target="fr9j5CF3H0y0zzAQEQXM-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-77" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.delay;whiteSpace=wrap;fillColor=#fff2cc;strokeColor=#d6b656;" value="Wait for the disc to be ejected." vertex="1">
+          <mxGeometry height="40" width="200" x="990" y="920" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-78" edge="1" parent="1" source="fr9j5CF3H0y0zzAQEQXM-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="fr9j5CF3H0y0zzAQEQXM-77">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-87" edge="1" parent="1" source="fr9j5CF3H0y0zzAQEQXM-81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="fr9j5CF3H0y0zzAQEQXM-84">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-81" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Load and run IOS211 from the NAND.&lt;div&gt;In a normal setup, this will be Lifeboot IOS.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="245" x="350" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-84" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Lifeboot IOS&lt;div&gt;(IOS211)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="100" x="110" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-129" edge="1" parent="1" source="fr9j5CF3H0y0zzAQEQXM-88" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="fr9j5CF3H0y0zzAQEQXM-90">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-131" connectable="0" parent="fr9j5CF3H0y0zzAQEQXM-129" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="-0.4782" y="-2" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-88" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" value="Is there an SD card&lt;div&gt;in the SD card slot?&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="200" x="60" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-90" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Read the Lifeboot config&lt;div&gt;file from the SD card.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="160" x="80" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-93" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" value="Is the autoboot setting&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;turned on?&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="240" x="640" y="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-96" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Go to the Wii Menu&lt;div&gt;and boot normally.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="160" x="680" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-102" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Read the Lifeboot config&lt;div&gt;file from the USB drive.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="160" x="320" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-107" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" value="Are the A, B, X, Y, and Z&lt;div&gt;buttons&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;being held on the GameCube&lt;/span&gt;&lt;div&gt;controller in port 4?&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="245" x="37.5" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-110" edge="1" parent="1" source="fr9j5CF3H0y0zzAQEQXM-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="fr9j5CF3H0y0zzAQEQXM-107">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-114" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Interrupt normal boot&lt;div&gt;process and open the&lt;/div&gt;&lt;div&gt;Lifeboot Menu.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="160" x="520" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-116" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" value="Is a keyboard plugged in&lt;div&gt;to any of the USB ports?&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="245" x="37.5" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-117" edge="1" parent="1" source="fr9j5CF3H0y0zzAQEQXM-107" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="fr9j5CF3H0y0zzAQEQXM-116">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-120" connectable="0" parent="fr9j5CF3H0y0zzAQEQXM-117" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="No" vertex="1">
+          <mxGeometry relative="1" x="-0.2896" as="geometry">
+            <mxPoint x="-1" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-118" edge="1" parent="1" source="fr9j5CF3H0y0zzAQEQXM-116" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="fr9j5CF3H0y0zzAQEQXM-88">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-119" connectable="0" parent="fr9j5CF3H0y0zzAQEQXM-118" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="No" vertex="1">
+          <mxGeometry relative="1" x="-0.3687" y="-2" as="geometry">
+            <mxPoint x="1" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-121" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" value="Is the space bar being held?" vertex="1">
+          <mxGeometry height="60" width="200" x="320" y="745" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-122" edge="1" parent="1" source="fr9j5CF3H0y0zzAQEQXM-116" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="fr9j5CF3H0y0zzAQEQXM-121">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-123" connectable="0" parent="fr9j5CF3H0y0zzAQEQXM-122" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="-0.4708" y="-1" as="geometry">
+            <mxPoint x="3" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-126" edge="1" parent="1" source="fr9j5CF3H0y0zzAQEQXM-121" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="fr9j5CF3H0y0zzAQEQXM-88">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="420" y="825" />
+              <mxPoint x="160" y="825" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-127" connectable="0" parent="fr9j5CF3H0y0zzAQEQXM-126" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="No" vertex="1">
+          <mxGeometry relative="1" x="-0.9275" as="geometry">
+            <mxPoint x="-1" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-130" edge="1" parent="1" source="fr9j5CF3H0y0zzAQEQXM-90" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="fr9j5CF3H0y0zzAQEQXM-93">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-132" edge="1" parent="1" source="fr9j5CF3H0y0zzAQEQXM-88" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="WJ9gDT0KFdKt9C58NnB0-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-133" connectable="0" parent="fr9j5CF3H0y0zzAQEQXM-132" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="No" vertex="1">
+          <mxGeometry relative="1" x="-0.8286" as="geometry">
+            <mxPoint x="1" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-143" edge="1" parent="1" source="fr9j5CF3H0y0zzAQEQXM-102" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="fr9j5CF3H0y0zzAQEQXM-93">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-144" edge="1" parent="1" source="fr9j5CF3H0y0zzAQEQXM-93" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" target="fr9j5CF3H0y0zzAQEQXM-96">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-145" connectable="0" parent="fr9j5CF3H0y0zzAQEQXM-144" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="-0.7801" y="2" as="geometry">
+            <mxPoint x="1" y="13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-146" edge="1" parent="1" source="fr9j5CF3H0y0zzAQEQXM-93" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="fr9j5CF3H0y0zzAQEQXM-114">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-147" connectable="0" parent="fr9j5CF3H0y0zzAQEQXM-146" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="No" vertex="1">
+          <mxGeometry relative="1" x="-0.9717" as="geometry">
+            <mxPoint x="-1" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-148" edge="1" parent="1" source="WJ9gDT0KFdKt9C58NnB0-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" target="fr9j5CF3H0y0zzAQEQXM-96">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-149" connectable="0" parent="fr9j5CF3H0y0zzAQEQXM-148" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="No" vertex="1">
+          <mxGeometry relative="1" x="-0.894" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-150" edge="1" parent="1" source="fr9j5CF3H0y0zzAQEQXM-121" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="fr9j5CF3H0y0zzAQEQXM-114">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-153" connectable="0" parent="fr9j5CF3H0y0zzAQEQXM-150" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="-0.9162" as="geometry">
+            <mxPoint x="-1" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-151" edge="1" parent="1" source="fr9j5CF3H0y0zzAQEQXM-107" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="fr9j5CF3H0y0zzAQEQXM-114">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="420" y="665" />
+              <mxPoint x="420" y="600" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fr9j5CF3H0y0zzAQEQXM-152" connectable="0" parent="fr9j5CF3H0y0zzAQEQXM-151" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="-0.9363" as="geometry">
+            <mxPoint x="8" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
