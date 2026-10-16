@@ -33,3 +33,5 @@ If you hold down the POWER and EJECT buttons while turning on your Wii, the Life
 
 On the Wii Mini, you would instead hold down the POWER button while the disc tray is open.
 
+## Flowchart
+[Click here](./Boot%20Process%20Flowchart.png) to see a flowchart of the Wii's boot process with Lifeboot installed.
