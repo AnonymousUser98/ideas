@@ -41,4 +41,8 @@ This is similar to BootMii. When it loads, it looks for a config file on the SD 
 
 Holding down the space bar on a USB keyboard or holding the A, B, X, Y, and Z buttons on a GameCube controller in port 4 will force Lifeboot IOS to ignore the autoboot setting and open the Lifeboot Menu.
 
-<!-- TO-DO: Add section for Lifeboot Menu -->
+## Lifeboot Menu
+There are 2 ways to access this menu:
+
+- Through Lifeboot IOS (when autoboot is disabled or bypassed)
+- By running a "Lifeboot Menu Loader" homebrew app
