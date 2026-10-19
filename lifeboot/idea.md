@@ -55,22 +55,22 @@ You would also be able to navigate it using a USB keyboard or GameCube controlle
 - **Wii Menu**
 - **Homebrew Channel**
 - **Load DOL/ELF**
-- - SD:/boot.dol
-- - SD:/boot.elf
-- - USB:/boot.dol
-- - USB:/boot.elf
-- - USB:/bootmini.dol
-- - USB:/bootmini.elf
-- - File Browser
+  - SD:/boot.dol
+  - SD:/boot.elf
+  - USB:/boot.dol
+  - USB:/boot.elf
+  - USB:/bootmini.dol
+  - USB:/bootmini.elf
+  - File Browser
 - **Useful Apps** (See table below for details)
 - **NAND Manager**
-- - BootMii IOS
-- - nanddumper@IOS
-- - Emergency Tool
-- - - Backup (SD)
-- - - Backup (USB)
-- - - Restore (SD)
-- - - Restore (USB)
+  - BootMii IOS
+  - nanddumper@IOS
+  - Emergency Tool
+    - Backup (SD)
+    - Backup (USB)
+    - Restore (SD)
+    - Restore (USB)
 - **Config Editor**
 
 ### Homebrew App Shortcuts
