@@ -46,3 +46,34 @@ There are 2 ways to access this menu:
 
 - Through Lifeboot IOS (when autoboot is disabled or bypassed)
 - By running a "Lifeboot Menu Loader" homebrew app
+
+The Lifeboot Menu would be navigated using the console's POWER and RESET buttons. On a Wii Mini, there's no RESET button, so you would instead hold the POWER button for a half-second to confirm your menu selection.\
+You would also be able to navigate it using a USB keyboard or GameCube controller.
+
+### Menu Options
+
+- **Wii Menu**
+- **Homebrew Channel**
+- **Load DOL/ELF**
+- - SD:/boot.dol
+- - SD:/boot.elf
+- - USB:/boot.dol
+- - USB:/boot.elf
+- - USB:/bootmini.dol
+- - USB:/bootmini.elf
+- - File Browser
+- **Useful Apps** (See table below for details)
+- **NAND Manager**
+- - BootMii IOS
+- - nanddumper@IOS
+- - Emergency Tool
+- - - Backup (SD)
+- - - Backup (USB)
+- - - Restore (SD)
+- - - Restore (USB)
+- **Config Editor**
+
+### Homebrew App Shortcuts
+The _Useful Apps_ option in the menu opens a sub-menu with a list of homebrew apps that can be used to recover from a brick. A few apps are stored in a special location in the NAND, in case the SD card or USB drive won't work. Loading is attempted from SD, then USB, then NAND (if it's saved to the NAND).
+
+<!-- TO-DO: Add the table -->
