@@ -34,7 +34,7 @@ If you hold down the POWER and EJECT buttons while turning on your Wii, the Life
 On the Wii Mini, you would instead hold down the POWER button while the disc tray is open.
 
 ## Flowchart
-[Click here](Boot%20Process%20Flowchart.png) to see a flowchart of the Wii's boot process with Lifeboot installed.
+[Click here](../lifeboot/Boot%20Process%20Flowchart.png) to see a flowchart of the Wii's boot process with Lifeboot installed.
 
 ## Lifeboot IOS
 This is similar to BootMii. When it loads, it looks for a config file on the SD card or USB drive, which tells it what to do next. By default, the autoboot setting is enabled, causing it to simply load the Wii Menu normally. If the autoboot setting is disabled, the Lifeboot Menu will open whenever the console is turned on. If there is no SD card or USB drive, it will just open the Wii Menu.
