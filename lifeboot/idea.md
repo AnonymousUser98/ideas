@@ -78,6 +78,7 @@ The _Useful Apps_ option in the menu opens a sub-menu with a list of homebrew ap
 This menu is mostly for convenience when you already have a homebrew app on your storage device, allowing you to skip copying the `boot.dol` file to the root directory.
 
 |Homebrew App|Stored in NAND?|
+|---|---|
 |HackMii Installer|No|
 |YAWM ModMii Edition|Yes|
 |SysCheck ModMii Edition|No|
