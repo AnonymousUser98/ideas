@@ -94,3 +94,10 @@ This menu is mostly for convenience when you already have a homebrew app on your
 
 ### Emergency NAND Manager
 Mainly used for restoring NAND backups when BootMii is unavailable. Uses a GameCube controller or USB keyboard for Konami code input.
+
+## Challenges
+There's a major roadblock preventing this idea from being created and widely used: nandboot is copyrighted content, and the homebrew community won't want to distribute it. Even if it was an independent project, the homebrew community wouldn't recommend using it.
+
+I don't know what the specific DMCA laws are, and I don't know how nandboot could be legally distributed. It would need to use some kind of indirect distribution or something that exploits a loophole. I've heard that console hacking is perfectly legal for repairs (it's only legally grey for homebrew), so maybe that could be used to our advantage?
+
+However, if we could get around the legal issues, this idea would provide very good brick protection for all Wiis, including Wii Family Edition and Wii Mini.
