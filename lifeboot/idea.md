@@ -74,6 +74,22 @@ You would also be able to navigate it using a USB keyboard or GameCube controlle
 - **Config Editor**
 
 ### Homebrew App Shortcuts
-The _Useful Apps_ option in the menu opens a sub-menu with a list of homebrew apps that can be used to recover from a brick. A few apps are stored in a special location in the NAND, in case the SD card or USB drive won't work. Loading is attempted from SD, then USB, then NAND (if it's saved to the NAND).
+The _Useful Apps_ option in the menu opens a sub-menu with a list of homebrew apps that can be used to recover from a brick. A few important apps are stored in a special location in the NAND, in case the SD card or USB drive won't work. Loading is attempted from SD, then USB, then NAND (if it's saved to the NAND).\
+This menu is mostly for convenience when you already have a homebrew app on your storage device, allowing you to skip copying the `boot.dol` file to the root directory.
 
-<!-- TO-DO: Add the table -->
+|Homebrew App|Stored in NAND?|
+|HackMii Installer|No|
+|YAWM ModMii Edition|Yes|
+|SysCheck ModMii Edition|No|
+|Priiloader Installer|No|
+|Any Region Changer ME|Yes|
+|WiiXplorer-SS|No|
+|KoreanKii|No|
+|nanddumper@IOS|No|
+|Dump Mii NAND|No|
+|SEEPROM Viewer|Yes|
+|csm-installer|No|
+|Wii Mod Lite|No|
+
+### Emergency NAND Manager
+Mainly used for restoring NAND backups when BootMii is unavailable. Uses a GameCube controller or USB keyboard for Konami code input.
