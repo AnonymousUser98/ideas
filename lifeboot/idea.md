@@ -26,7 +26,7 @@ This is what gets loaded by nandboot. It's mostly a workaround for not being abl
 
 Lifeboot IOS is much more likely to get corrupted than the boot program because the boot program is designed to be almost never updated. However, Lifeboot IOS could receive updates, and it's also installed as IOS211, which can be easily overwritten by the user.
 
-If the user is using a Wii Mini (or they just don't have access to an SD card), they can use **Disc Boot Mode** to fix a broken IOS211.
+If the user is using a Wii Mini (or doesn't have access to an SD card), they can use **Disc Boot Mode** to fix a broken IOS211.
 
 ### Disc Boot Mode
 If you hold down the POWER and EJECT buttons while turning on your Wii, the Lifeboot boot program will enter Disc Boot Mode. In this state, you can boot any Wii or GameCube disc, and if your drive is compatible, you can also load a DOL or ELF file from a burned DVD.
