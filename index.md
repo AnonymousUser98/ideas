@@ -13,6 +13,7 @@ This is where I post ideas for stuff that should exist. If you know how to make 
 - [Badger](badger3ds/idea.md) - Badge manager homebrew app for 3DS
 - [Metric Hacks](metric/idea.md) - ROM hacks for various games that add support for metric units
 - [Sensor Bar cIOS](sensor-bar-channel/idea.md) - A homebrew app (and cIOS) for better sensor bar accuracy
+- [Lifeboot](lifeboot/idea.md) - Best possible brick protection for all Wii consoles
 
 ## Usage Policy
 These are all "someone should make this" or "please make this if you know how to" ideas, so I'm perfectly fine with you using them (including the names and logos). You can modify them, improve them, or even discuss improvements to my ideas without actually starting the project.
