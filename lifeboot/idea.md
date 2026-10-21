@@ -101,3 +101,9 @@ There's a major roadblock preventing this idea from being created and widely use
 I don't know what the specific DMCA laws are, and I don't know how nandboot could be legally distributed. It would need to use some kind of indirect distribution or something that exploits a loophole. I've heard that console hacking is perfectly legal for repairs (it's only legally grey for homebrew), so maybe that could be used to our advantage?
 
 However, if we could get around the legal issues, this idea would provide very good brick protection for all Wiis, including Wii Family Edition and Wii Mini.
+
+## Advantages Over SDBoot
+- SDBoot requires an SD card to boot from. If it's installed, the console won't boot without an SD card.
+- SDBoot only supports non-SDHC cards (2GB and smaller).
+- Using nandboot allows a USB drive to be used instead of an SD card, making it work on the Wii Mini.
+- Unlike SDBoot, nandboot has absolutely no security checks, so no exploits are required.
