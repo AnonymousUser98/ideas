@@ -3,6 +3,7 @@ title: Lifeboot (Wii Brick Protection)
 permalink: /wii/lifeboot
 ---
 
+# Lifeboot
 Lifeboot would provide amazing BootMii-as-boot2-level brick protection for all Wiis, including the Wii Mini. It works by using [nandboot](https://wiki.raregamingdump.ca/index.php?title=boot2#nandboot), which has a valid signature that boot1 will accept.
 
 ## Installer
