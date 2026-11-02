@@ -3,6 +3,7 @@ title: Fastboot Forwarder Creator (3DS)
 permalink: /3ds/fastboot-forwarder/
 ---
 
+# Fastboot Forwarder Creator
 This program (which runs on a computer) would make it easy to create HOME Menu shortcuts to FIRMs on the SD card (for fastboot3ds).
 
 ## What It Should Look Like
