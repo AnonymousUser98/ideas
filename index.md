@@ -21,6 +21,8 @@ These are all "someone should make this" or "please make this if you know how to
 
 If you make any of these ideas, I would prefer it if you made it open-source on GitHub or Codeberg. Also, I would want to know about it, so please share the repo link with me once it's finished.
 
+I'm fine with people using AI to help create these ideas, as long as it's high-quality and it works.
+
 ## Share These Ideas
 If you know someone that would be interested in getting one of my ideas started, please share it with them.
 
