@@ -17,7 +17,7 @@ This is where I post ideas for stuff that should exist. If you know how to make 
 - [Fastboot Forwarder Creator](fastboot-forwarder/idea.md) - Easily create HOME Menu shortcuts for fastboot3ds
 
 ## Usage Policy
-These are all "someone should make this" or "please make this if you know how to" ideas, so I'm perfectly fine with you using them (including the names and logos). You can modify them, improve them, or even discuss improvements to my ideas without actually starting the project.
+These are all "someone should make this" or "please make this if you know how to" ideas, so I'm perfectly fine with you using them (including the names and logos). You can modify them, improve them, or even discuss improvements to my ideas without actually starting the project. Crediting me for the ideas is appreciated but optional.
 
 If you make any of these ideas, I would prefer it if you made it open-source on GitHub or Codeberg. Also, I would want to know about it, so please share the repo link with me once it's finished.
 
