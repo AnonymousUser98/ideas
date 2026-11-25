@@ -12,10 +12,8 @@ Use km/h and meters in the North American version. Might also have an option to 
 This mod would also prevent the glitchy lines from appearing on your photos, and it would add an option to not render balloons and "i-points" when taking photos.
 
 ## Wii Fit / Wii Fit Plus
-> [!NOTE]
-> Depending on how save data is stored, this mod might need to change the save data structure in the North American version.
-
-You can _kind of_ change the units by using a copy for a different region, but there are some problems with that. It's inconvenient, and it makes it harder to go back. Also, if you want to use pounds and centimeters, then you're out of luck.
+You can _kind of_ change the units by using a copy for a different region, but there are some problems with that. It's inconvenient, and it makes it harder to go back. Also, if you want to use pounds and centimeters, then you're out of luck.\
+_Wii Fit Plus_ uses different units depending on your console's country setting, but there's no way to mix metric and imperial units, and people usually want to keep their country setting accurate.
 
 Someone should make a ROM hack that allows each user profile to choose their preferred units for height, weight, and speed.
 
