@@ -16,6 +16,9 @@ This is where I post ideas for stuff that should exist. If you know how to make 
 - [Lifeboot](lifeboot/idea.md) - Best possible brick protection for all Wii consoles
 - [Fastboot Forwarder Creator](fastboot-forwarder/idea.md) - Easily create HOME Menu shortcuts for fastboot3ds
 
+## Small/Simple Ideas
+I've created a list of small, simple ideas that aren't very unique or detailed. It's basically just a list of things that should exist. [Click here](short.md) to view the list.
+
 ## Usage Policy
 These are all "someone should make this" or "please make this if you know how to" ideas, so I'm perfectly fine with you using them (including the names and logos). You can modify them, improve them, or even discuss improvements to my ideas without actually starting the project. Crediting me for the ideas is appreciated but optional.
 
